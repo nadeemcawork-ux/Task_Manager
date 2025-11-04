@@ -1,9 +1,8 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import react from '@vitejs/plugin-react-swc' // 👈 use -swc here
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/Task_Manager/', // 👈 VERY IMPORTANT for GitHub Pages
+  base: '/Task_Manager/', // 👈 this now works correctly
 })
 

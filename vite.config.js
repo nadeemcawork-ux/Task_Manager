@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import react from '@vitejs/plugin-react' // keep if using React
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Task_Manager/', // 👈 Must match your repo name exactly
+  base: '/Task_Manager/', // 👈 must match your repo name exactly
 })
